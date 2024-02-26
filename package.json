@@ -1,0 +1,57 @@
+{
+  "name": "sharp-webpack-plugin",
+  "version": "1.0.0",
+  "description": "基于sharp图片压缩的webpack插件",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhusiqing/sharp-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack4",
+    "compress",
+    "sharp",
+    "picture",
+    "image"
+  ],
+  "author": "zhusiqing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhusiqing/sharp-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/zhusiqing/sharp-webpack-plugin#readme",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.17.12",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/node": "^20.11.20",
+    "@types/webpack": "^5.28.5",
+    "prettier": "^2.7.1",
+    "rollup": "^2.75.6",
+    "rollup-plugin-dts": "^4.2.2",
+    "tslib": "^2.4.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "sharp": "0.32.6"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  }
+}
